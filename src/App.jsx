@@ -51,18 +51,20 @@ function App() {
     alert("Added lead");
   };
   return (
-    <div className="container mx-auto px-20 bg-background">
-      <div className="flex justify-between items-center">
-        <h1 className="font-semibold text-3xl">Magnabox Private limited</h1>
-        <img src="/3sigma-logo.png" className="w-40" alt="" />
+    <div className="container mx-auto px-2 lg:px-20 bg-background">
+      <div className="flex justify-between mx-auto items-center py-4">
+        <h1 className="font-bold text-xl lg:text-3xl">
+          Magnabox Private limited
+        </h1>
+        <img src="/3sigma-logo.png" className="w-24 lg:w-40" alt="" />
       </div>
-      <div className="flex justify-between items-center py-6">
-        <h2 className="text-2xl font-semibold">Add new lead form</h2>
+      <div className="flex justify-between items-center">
+        <h2 className="lg:text-2xl font-semibold">Add new lead form</h2>
         <button className="px-6 outline-2 border border-gray rounded-lg py-2 text-red">
           Cancel
         </button>
       </div>
-      <form className="mt-32" onSubmit={formHandler}>
+      <form className="lg:mt-20" onSubmit={formHandler}>
         <div className="pb-4 relative">
           <label htmlFor="LeadName" className="ps-2">
             <p className="normal-case">
@@ -76,7 +78,7 @@ function App() {
             id=""
             required
             placeholder="Enter lead name"
-            className="input input-ghost w-full py-4 ps-10 rounded-lg"
+            className="input input-ghost w-full py-4 ps-8 lg:ps-10 rounded-lg"
           />
           <FaUser className="text-blue absolute bottom-9 left-2"></FaUser>
         </div>
@@ -90,7 +92,7 @@ function App() {
             id=""
             required
             placeholder="Example@anyemail.com"
-            className="input input-ghost w-full py-4 ps-10 rounded-lg"
+            className="input input-ghost w-full py-4 ps-8 lg:ps-10  rounded-lg"
           />
           <IoMdMail className="text-blue absolute bottom-9 left-2"></IoMdMail>
         </div>
@@ -106,7 +108,7 @@ function App() {
             required
             maxLength={13}
             placeholder="+91 8800688763"
-            className="input input-ghost w-full py-4 ps-10 rounded-lg"
+            className="input input-ghost w-full py-4 ps-8 lg:ps-10  rounded-lg"
           />
           <FaPhoneAlt className="text-blue absolute bottom-9 left-2"></FaPhoneAlt>
         </div>
@@ -119,7 +121,7 @@ function App() {
             name="address"
             id="address"
             placeholder="Gugurgram, India"
-            className="input input-ghost w-full py-4 ps-10 rounded-lg"
+            className="input input-ghost w-full py-4 ps-8 lg:ps-10  rounded-lg"
             onChange={updateMap}
           />
           <AiOutlineGlobal className="text-blue absolute bottom-9 left-2"></AiOutlineGlobal>
@@ -136,7 +138,7 @@ function App() {
             id=""
             min={0}
             placeholder="50,00,000"
-            className="input input-ghost w-full py-4 ps-10 rounded-lg"
+            className="input input-ghost w-full py-4 ps-8 lg:ps-10  rounded-lg"
           />
           <FaRupeeSign className="text-blue absolute bottom-9 left-2"></FaRupeeSign>
         </div>
@@ -150,7 +152,7 @@ function App() {
             name="date"
             id="date"
             placeholder="29 August 2023"
-            className="input input-ghost w-full py-4 ps-10 rounded-lg"
+            className="input input-ghost w-full py-4 ps-8 lg:ps-10  rounded-lg"
           />
           <SlCalender className="text-blue absolute bottom-9 left-2"></SlCalender>
         </div>
@@ -163,7 +165,7 @@ function App() {
             name="time"
             id="time"
             placeholder="20:21 pm"
-            className="input input-ghost w-full py-4 ps-10 rounded-lg"
+            className="input input-ghost w-full py-4 ps-8 lg:ps-10  rounded-lg"
           />
           <IoTimeSharp className="text-blue absolute bottom-9 left-2"></IoTimeSharp>
         </div>
@@ -174,7 +176,7 @@ function App() {
           <select
             name="option"
             id=""
-            className="select select-bordered w-full py-5 ps-10 rounded-lg"
+            className="select select-bordered w-full py-5 ps-8 lg:ps-10  rounded-lg"
           >
             <option defaultValue="Select option">Select option</option>
             <option value="Select option">Select option</option>
@@ -190,7 +192,7 @@ function App() {
           <select
             name="product"
             id=""
-            className="select select-bordered w-full py-5 ps-10 rounded-lg"
+            className="select select-bordered w-full py-5 ps-8 lg:ps-10  rounded-lg"
           >
             <option defaultValue=""></option>
             <option value=""></option>
@@ -204,7 +206,7 @@ function App() {
             Note
           </label>{" "}
           <textarea
-            className="textarea textarea-bordered ps-10 rounded-lg w-full"
+            className="textarea textarea-bordered ps-8 lg:ps-10  rounded-lg w-full"
             name="note"
             id=""
             rows={6}
@@ -212,7 +214,7 @@ function App() {
             maxLength={250}
           ></textarea>
         </div>
-        <button className="btn bg-button text-white w-full py-4 rounded-xl mt-32 mb-12">
+        <button className="btn bg-button text-white w-full py-4 rounded-xl mt-20 mb-12">
           Add lead
         </button>
       </form>

@@ -8,13 +8,8 @@ export default {
       button: "#3A4B86",
       white: "#FFFFFF",
       blue: "#3FAEFD",
-      green: "#13ce66",
-      yellow: "#ffc82c",
-      "gray-dark": "#273444",
       gray: "#8492a6",
-      "gray-light": "#d3dce6",
     },
   },
   plugins: [],
 };
-// require("daisyui")
