@@ -48,7 +48,7 @@ function App() {
   };
   const formHandler = (e) => {
     e.preventDefault();
-    console.log("form work");
+    alert("Added lead");
   };
   return (
     <div className="container mx-auto px-20 bg-background">
